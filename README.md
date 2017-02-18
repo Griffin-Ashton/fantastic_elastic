@@ -1,5 +1,5 @@
 
-<center> <h1> Fantastic Elastic </h1></center>
+# Fantastic Elastic 
 
 Setting up Elasticsearch on Ubuntu 14.04
 
@@ -119,11 +119,53 @@ If you wanted to rename your cluster enter the following command after filling i
 ```
 ./elasticsearch -Ecluster.name=my_cluster_name -Enode.name=my_node_name
 ```
+```
+{
+  "name" : "ChumBucket",
+  "cluster_name" : "SharkTank",
+  "cluster_uuid" : "9gR-G0k6Q0yNzvS3olcU6w",
+  "version" : {
+    "number" : "5.2.1",
+    "build_hash" : "db0d481",
+    "build_date" : "2017-02-09T22:05:32.386Z",
+    "build_snapshot" : false,
+    "lucene_version" : "6.4.1"
+  },
+  "tagline" : "You Know, for Search"
+}
+```
 
-<center><h1>![alt text][Exploration]</h1></center>
+
+![alt text][Exploration]
 [Exploration]: https://github.com/Griffin-Ashton/fantastic_elastic/blob/master/Shark2.jpg "Exploration"
 
 ## Cluster Exploration  
+
+One of the major fetaures of Elasticsearch is that it comes with a REST API that allows you to interact with yoru cluster. The put it simply, a RESTFUL API is an interface that allows you to interact with your application similar to how computes and websiites talk to one another. 
+
+Typically there are four primary commands that allow you to interact with your server. The commands are slightly different for elastic search, but the functions remaind the same.  
+
+* GET    - retrieves the file
+* PUT    - updates a file
+* POST   - create (or upload) a new file
+* DELETE - deletes a file
+
+For Elasticsearch the above commands can be translated. 
+
+* Read   = GET
+* Upate  = PUT
+* Create = POST
+* Delete = DELETE
+
+Additionally, with the Elasticsearch API you can perform additional operations. 
+
+* Check in on very healthy stats and indicies on how your cluster is operating
+* Perform adminstrative duters and update metadata
+* Conduct advance search operations such as paging, sorting, filtering, scripting, aggregations, and many others
+
+
+
+
 
 
 
