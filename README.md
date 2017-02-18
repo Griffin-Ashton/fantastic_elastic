@@ -59,7 +59,7 @@ If you want set a new default you can enter. (Make sure you have root permission
 sudo update-java-alternatives --set /path/to/java/version
 ```
 
-## Installing Elasticsearch
+## Installing Elasticsearch & Setting up
 
 Now that you've taken care of the prerequisites, you can move on to installing Elasticsearch. The process for doing this was mostly sourced from the link provided above, but I've trie to provide some additional comments based on my own experience. 
 
@@ -109,9 +109,16 @@ You should see this after following displayed in your browser after entering the
   "tagline" : "You Know, for Search"
 }
 ```
+To shutdown the cluster, close the terminal you used to set up the server. Once you do, revisit your local host IP address. Your webrowser should be providing with a prompt similar to 'This site can't be reached'. 
 
-If you wanted to rename your cluster enter the following command. 
+### Renaming Your Cluster
+
+If you wanted to rename your cluster enter the following command after filling in the fields for your preferred names. This should also relaunch the cluster. Revisit your local IP address to confirm this. 
 
 ```
 ./elasticsearch -Ecluster.name=my_cluster_name -Enode.name=my_node_name
 ```
+## Cluster Exploration
+
+
+
