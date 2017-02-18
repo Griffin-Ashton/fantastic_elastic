@@ -1,5 +1,6 @@
 
-# fantastic_elastic
+<center> <h1> Fantastic Elastic </h1></center>
+
 Setting up Elasticsearch on Ubuntu 14.04
 
 ### Introduction
@@ -118,10 +119,11 @@ If you wanted to rename your cluster enter the following command after filling i
 ```
 ./elasticsearch -Ecluster.name=my_cluster_name -Enode.name=my_node_name
 ```
-## Cluster Exploration
 
-![alt text][Exploration] 
-
+<center><h1>![alt text][Exploration]</h1></center>
 [Exploration]: https://github.com/Griffin-Ashton/fantastic_elastic/blob/master/Shark2.jpg "Exploration"
+
+## Cluster Exploration  
+
 
 
