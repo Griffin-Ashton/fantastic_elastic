@@ -163,9 +163,23 @@ Additionally, with the Elasticsearch API you can perform additional operations.
 * Perform adminstrative duters and update metadata
 * Conduct advance search operations such as paging, sorting, filtering, scripting, aggregations, and many others
 
+### Checkinng Cluster Health
 
+The first thing we want to explore is current cluster health. To do this open up a new terminal window (as the other is still busy running your cluster). I would recommend that you interact with your cluster via CURL, but there are additional options available. 
 
+Enter the following command, an output should be returned in your terminal window. 
 
+```
+curl -XGET 'localhost:9200/_cat/health?v&pretty'
+```
+
+As you become more familiar with the different fields, you can just return the raw information by entering the following. 
+
+```
+curl -XGET 'localhost:9200/_cat/health?'
+```
+
+Keep in mind that green always mean good. While yellow and red would be 'Not so good, Bob' and 'Tragedy' respectively. 
 
 
 
