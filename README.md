@@ -120,5 +120,8 @@ If you wanted to rename your cluster enter the following command after filling i
 ```
 ## Cluster Exploration
 
+![alt text][Exploration] 
+
+[Exploration]: https://github.com/Griffin-Ashton/fantastic_elastic/blob/master/Shark2.jpg "Exploration"
 
 
